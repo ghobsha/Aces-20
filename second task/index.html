@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>choose a color</title>
+  </head>
+  <body>
+    <h1>color picker</h1>
+
+
+      choose a color:
+      <input type="color" id="color" >
+      <br>
+      <input type="submit"  value="submit" onclick="on()">
+      <br>
+      <br>
+
+    <div style="  width: 270px;
+      height: 100px;
+      background-Color:#000000;" id="box" >
+
+
+    </div>
+  </body>
+  <script>
+    function on(){
+      var i=document.getElementById('color').value;
+      document.getElementById('box').style.backgroundColor=i;
+
+
+    }
+
+  </script>
+</html>
